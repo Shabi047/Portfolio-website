@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: red;
+    text-shadow: 0 0 25px red;
+    text-shadow: 0 0 50px red;
+    transform: scale(1.1);
+}
+
+#Shabi{
+    color: red;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+    color: white;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h3{
+    font-size: 42px;
+}
+
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px
+}
+
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2{
+    padding: 15px 28px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    background-color: white;
+    color: red;
+}
+
+.img-box img{
+    border-radius: 35%;
+    width: 350px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px red;
+    box-shadow: 0 0 50px red;
+    border-radius: 30%;
+}
+
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.Services{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Services h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.Services .Services-cont{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.Services .Services-cont-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+    border-color: black;
+    height: 400px;
+    width: 30%;
+    gap: 15px;
+    transition: 0.5s ease;
+    box-shadow: 0 0 20px rgb(68, 67, 67);
+}
+
+.Services .Services-cont-2:hover{
+    transform: translateY(25px);
+    box-shadow: inset;
+    box-shadow: 0 0 25px red;
+}
+
+.Services-cont .img-cont{
+    height: 15%;
+    width: 13%;
+}
+
+.Services-cont .img-cont img{
+    height: 100%;
+    width: 100%;
+}
+
+.Projects{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Projects h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.Projects .Projects-cont{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.Projects .Projects-cont-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+    border-color: black;
+    height: 400px;
+    width: 30%;
+    gap: 15px;
+    transition: 0.5s ease;
+}
+
+.Projects .Projects-cont-2:hover{
+    transform: scale(1.1);
+}
+
+.Projects #h22{
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.Projects #eathouse{
+    background-image: url(images/eathouse.png);
+    box-shadow: 0 0 15px black;
+}
+
+.Projects #gameheimnexus{
+    background-image: url(images/gameheimnexus.jpeg);
+    box-shadow: 0 0 15px black;
+}
+
+.Projects #phonebook{
+    background-image: url(images/phonebook.jpg);
+    box-shadow: 0 0 15px black;
+}
+
+.Projects #AI{
+    background-image: url(images/AI.jpeg);
+    box-shadow: 0 0 15px black;
+}
+
+.Projects #Library{
+    background-image: url(images/Library.jpeg);
+    box-shadow: 0 0 15px black;
+}
+
+.Projects #Quiz{
+    background-image: url(images/quiz.jpeg);
+    box-shadow: 0 0 15px black;
+}
+
+.Skills{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Skills .cont1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Skills h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+.Skills .cont1 .linbar h3{
+    margin: 5px;
+    color: black;
+}
+
+.Skills .linbar{
+    width: 600px;
+    margin: 60px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Skills .linbar li{
+    margin: 20px ;
+    padding:10px;
+}
+
+.Skills .cont1 .linbar .bar{
+    background:#353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0 , 0, 0, 0,24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25.1);
+}
+
+.Skills .cont1 .linbar .bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0,22);
+}
+
+.Skills .bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 85%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 70%;
+    animation: javascript 3s;
+}
+
+.python{
+    width: 95%;
+    animation: python 3s;
+}
+
+.database{
+    width: 60%;
+    animation: database 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes database{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241 241 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer{
+    padding-top: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social a{
+    margin-right: 15px;
+}
+
+.footer .list{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.footer .list a{
+    color: white;
+}
+
+.footer .copyright{
+    color: white;
+}
+
+@media(max-width:768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about-img{
+        display: none;
+    }
+
+    .Services .Services-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .Services .Services-cont-2{
+        width: 100%;
+        height: auto;
+    }
+
+    .Projects .Projects-cont .Projects-cont-2{
+        width: 40%;
+    }
+}
+
+@media(max-width:360px) {
+    .logo{
+        font-size: 35px;
+    }
+
+    .navbar a{
+        margin-right: 0px;
+        font-size: 9px; 
+        font-weight: 300;
+    }
+
+    .contact{
+        font-size: 10px;
+        padding: 5px 14px;
+    }
+
+    .img-box img{
+        border-radius: 35%;
+        width: 250px;
+    }
+
+    .Services .Services-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        gap: 20px;
+    }
+
+    .Services .Services-cont-2{
+        width: 100%;
+        height: auto;
+    }
+
+    .Projects .Projects-cont .Projects-cont-2{
+        width: 350px;
+    }
+}
